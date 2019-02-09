@@ -38,15 +38,16 @@ class RootViewController: UIViewController {
     
     @objc fileprivate func pushBarButtonItemTapped() {
         let controller = SecondViewController()
+        controller.secondViewControllerDelegate = self
         navigationController?.pushViewController(controller, animated: true)
     }
     
     @objc fileprivate func messageBarButtonItemTapped() {
-        
+        label.text = "Me: Hello"
     }
     
     @objc fileprivate func resetBarButtonItemTapped() {
-        
+        label.text = "Me: I am waiting for a message..."
     }
     
     fileprivate func setupViews() {
@@ -55,5 +56,17 @@ class RootViewController: UIViewController {
         label.centerInSuperview()
     }
     
+}
+
+extension RootViewController: SecondViewControllerDelegate {
+    
+    func didSendMessage(_ message: String) {
+        label.text = message
+    }
+    
+    func didSendOptionalMessage(_ message: String) {
+        label.text = message
+    }
+
 }
 

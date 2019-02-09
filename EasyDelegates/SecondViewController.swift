@@ -8,7 +8,18 @@
 
 import UIKit
 
+protocol SecondViewControllerDelegate {
+    func didSendMessage(_ message: String)
+    func didSendOptionalMessage(_ message: String)
+}
+
+extension SecondViewControllerDelegate {
+    func didSendOptionalMessage(_ message: String) {}
+}
+
 class SecondViewController: UIViewController {
+    
+    var secondViewControllerDelegate: SecondViewControllerDelegate?
     
     lazy var button: UIButton = {
         let button = UIButton()
@@ -27,10 +38,14 @@ class SecondViewController: UIViewController {
     }()
     
     @objc fileprivate func buttonTapped() {
+        let message = "Wow, delegates are cool!"
+        secondViewControllerDelegate?.didSendMessage(message)
         navigationController?.popViewController(animated: true)
     }
     
     @objc fileprivate func optionalButtonTapped() {
+        let message = "This is an optional message."
+        secondViewControllerDelegate?.didSendOptionalMessage(message)
         navigationController?.popViewController(animated: true)
     }
     
