@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BCB5FD354EDFF8F0202FBB4 /* Pods_EasyDelegates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA351E73FB22CF23432D9C9D /* Pods_EasyDelegates.framework */; };
 		C94F4BB2220EB2690096F380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F4BB1220EB2690096F380 /* AppDelegate.swift */; };
 		C94F4BB4220EB2690096F380 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F4BB3220EB2690096F380 /* RootViewController.swift */; };
 		C94F4BB6220EB26A0096F380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94F4BB5220EB26A0096F380 /* Assets.xcassets */; };
 		C94F4BB9220EB26A0096F380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94F4BB7220EB26A0096F380 /* LaunchScreen.storyboard */; };
+		C94F4BC1220EB2CF0096F380 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F4BC0220EB2CF0096F380 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81A2749E1F6225B822F56030 /* Pods-EasyDelegates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyDelegates.debug.xcconfig"; path = "Target Support Files/Pods-EasyDelegates/Pods-EasyDelegates.debug.xcconfig"; sourceTree = "<group>"; };
+		B3B54E7CA313DF6889208C59 /* Pods-EasyDelegates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyDelegates.release.xcconfig"; path = "Target Support Files/Pods-EasyDelegates/Pods-EasyDelegates.release.xcconfig"; sourceTree = "<group>"; };
 		C94F4BAE220EB2690096F380 /* EasyDelegates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyDelegates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94F4BB1220EB2690096F380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C94F4BB3220EB2690096F380 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		C94F4BB5220EB26A0096F380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C94F4BB8220EB26A0096F380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C94F4BBA220EB26A0096F380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C94F4BC0220EB2CF0096F380 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FA351E73FB22CF23432D9C9D /* Pods_EasyDelegates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyDelegates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BCB5FD354EDFF8F0202FBB4 /* Pods_EasyDelegates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0988A6810841B7D3C583CE67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA351E73FB22CF23432D9C9D /* Pods_EasyDelegates.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C94F4BA5220EB2690096F380 = {
 			isa = PBXGroup;
 			children = (
 				C94F4BB0220EB2690096F380 /* EasyDelegates */,
 				C94F4BAF220EB2690096F380 /* Products */,
+				E00B866281DA29FCC9371DE4 /* Pods */,
+				0988A6810841B7D3C583CE67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +71,22 @@
 			children = (
 				C94F4BB1220EB2690096F380 /* AppDelegate.swift */,
 				C94F4BB3220EB2690096F380 /* RootViewController.swift */,
+				C94F4BC0220EB2CF0096F380 /* SecondViewController.swift */,
 				C94F4BB5220EB26A0096F380 /* Assets.xcassets */,
 				C94F4BB7220EB26A0096F380 /* LaunchScreen.storyboard */,
 				C94F4BBA220EB26A0096F380 /* Info.plist */,
 			);
 			path = EasyDelegates;
+			sourceTree = "<group>";
+		};
+		E00B866281DA29FCC9371DE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81A2749E1F6225B822F56030 /* Pods-EasyDelegates.debug.xcconfig */,
+				B3B54E7CA313DF6889208C59 /* Pods-EasyDelegates.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C94F4BBD220EB26A0096F380 /* Build configuration list for PBXNativeTarget "EasyDelegates" */;
 			buildPhases = (
+				177301E34033C82B3AF673C4 /* [CP] Check Pods Manifest.lock */,
 				C94F4BAA220EB2690096F380 /* Sources */,
 				C94F4BAB220EB2690096F380 /* Frameworks */,
 				C94F4BAC220EB2690096F380 /* Resources */,
+				AFDEFD19A76E8C7593F5A30B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +156,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		177301E34033C82B3AF673C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyDelegates-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFDEFD19A76E8C7593F5A30B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyDelegates/Pods-EasyDelegates-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyDelegates/Pods-EasyDelegates-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C94F4BAA220EB2690096F380 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94F4BC1220EB2CF0096F380 /* SecondViewController.swift in Sources */,
 				C94F4BB4220EB2690096F380 /* RootViewController.swift in Sources */,
 				C94F4BB2220EB2690096F380 /* AppDelegate.swift in Sources */,
 			);
@@ -268,6 +346,7 @@
 		};
 		C94F4BBE220EB26A0096F380 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A2749E1F6225B822F56030 /* Pods-EasyDelegates.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +365,7 @@
 		};
 		C94F4BBF220EB26A0096F380 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B54E7CA313DF6889208C59 /* Pods-EasyDelegates.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
